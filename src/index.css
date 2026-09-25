@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+  }
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+@keyframes float-heart {
+  0% {
+    transform: translateY(15px) scale(0.9);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.45;
+  }
+  75% {
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(-70px) scale(1.05);
+    opacity: 0;
+  }
+}
+
+.floating-particle {
+  animation: float-heart var(--duration, 10s) ease-in-out infinite var(--delay, 0s);
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .floating-particle {
+    animation: none;
+    opacity: 0.25;
+  }
+}

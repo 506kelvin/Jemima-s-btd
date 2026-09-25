@@ -1,0 +1,6 @@
+{
+  "name": "Happy Birthday Jemima",
+  "description": "An elegant, warm, and heartfelt birthday card for Jemima with Idea 10 by Gibran Alcocer.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
